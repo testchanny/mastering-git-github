@@ -1,8 +1,134 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* 기본 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a {
-  color: #00B7FF;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #F5F5F5;
+  color: #3C1E1E;
+  line-height: 1.6;
 }
+
+/* 컨테이너 */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 헤더 스타일 */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #3C1E1E;
+  font-weight: bold;
+}
+
+header h1 span {
+  color: #FEE500;  /* 카카오 노란색 */
+}
+
+/* 프로필 섹션 스타일 */
+.profile {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #FEE500; /* 프로필 이미지 테두리 */
+}
+
+.profile p {
+  font-size: 1.2em;
+  color: #3C1E1E;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 기술 목록 섹션 스타일 */
+.skills {
+  margin-bottom: 40px;
+}
+
+.skills h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #3C1E1E;
+  border-left: 5px solid #FEE500;
+  padding-left: 10px;
+}
+
+.skills ul {
+  list-style-type: none;
+}
+
+.skills li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  position: relative;
+  color: #3C1E1E;
+}
+
+.skills li::before {
+  content: "✔";
+  color: #FEE500;  /* 노란색 체크 표시 */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* 연락처 섹션 스타일 */
+.contact h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #3C1E1E;
+  border-left: 5px solid #FEE500;
+  padding-left: 10px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #3C1E1E;
+}
+
+.contact a {
+  color: #FEE500;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+  color: #3C1E1E;
+}
+
+/* 푸터 스타일 */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #3C1E1E;
+  color: #fff;
+  margin-top: 40px;
+  border-radius: 0 0 8px 8px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
